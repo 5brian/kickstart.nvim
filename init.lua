@@ -808,6 +808,7 @@ require('lazy').setup({
 
           -- If you prefer more traditional completion keymaps,
           -- you can uncomment the following lines
+          ['<Tab>'] = cmp.mapping.confirm { select = true },
           --['<CR>'] = cmp.mapping.confirm { select = true },
           --['<Tab>'] = cmp.mapping.select_next_item(),
           --['<S-Tab>'] = cmp.mapping.select_prev_item(),
@@ -989,6 +990,8 @@ require('lazy').setup({
 -- vim: ts=2 sts=2 sw=2 et
 
 -- Keymaps
+-- filetree
 vim.api.nvim_set_keymap('n', '<C-n>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+-- movement
 vim.api.nvim_set_keymap('n', '<S-j>', '26j', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<S-k>', '26k', { noremap = true, silent = true })
