@@ -24,9 +24,4 @@ return {
       'nvim-tree/nvim-web-devicons', -- optional
     },
   },
-  {
-    '5brian/quandary-nvim',
-    ft = { 'quandary' },
-    config = true,
-  },
 }
